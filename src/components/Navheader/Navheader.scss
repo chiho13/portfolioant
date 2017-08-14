@@ -1,0 +1,27 @@
+@import "../../baseStyle/main";
+
+.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+.header {
+  background-color: $brand-color;
+  padding: 0;
+}
+.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+
+  &:hover{
+    background-color: lighten($brand-color, 10%);
+    transition: background-color 0.2s;
+  }
+}
+
+.active {
+  background-color: lighten($brand-color, 10%);
+}
