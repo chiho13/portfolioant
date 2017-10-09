@@ -5,7 +5,7 @@ export default class Portfolio extends Component {
   render() {
       return (
         <div>
-          <ProfileCard title="Portfolio" details="This is my work"/>
+          <ProfileCard title="Portfolio"/>
         </div>
       );
     }
