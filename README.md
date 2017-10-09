@@ -1,4 +1,4 @@
-##Anthony's Portfoliio
+## Anthony's Portfoliio
 
 In the project directory, you can run:
 
