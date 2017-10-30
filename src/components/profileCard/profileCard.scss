@@ -1,22 +1,113 @@
 //profile card styles
+@import "../../baseStyle/main";
+$profileCard_small_breakpoint: 500px;
+$profileCard_medium_breakpoint: 760px;
+$profileCard_max-width: 1000px;
 
-.profileCard_content {
-  background-color: #f1f1f1;
-  padding: 20px;
+.profileCard {
+    display: block;
+    padding-top: ($core-padding * 0.5);
+    margin: 0 auto;
+    max-width: $profileCard_max-width;
 
+    @media (min-width: $profileCard_medium_breakpoint) {
+      flex-basis: 60%;
+    }
+}
+
+.profileCard_avatarContainer {
+    transform: translateY(-75px);
+
+     @media (min-width: $profileCard_small_breakpoint) {
+        transform: translateY(-105px);
+     }
+}
+
+.profileCard_avatarImage {
+    display: block;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: ($core-margin * 0.4);
+    border: 1px solid #ddd;
+    background-color: rgba(200, 200, 200, 0.5);
+
+    @media (min-width: $profileCard_small_breakpoint) {
+        width: 160px;
+        height:  160px;
+        margin-left: ($core-margin * 4);
+    }
 }
 
 .profileCard_content_container {
-  display: flex;
-  justify-content: center;
-  width: 800px;
-  margin: 0 auto;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: $light-color
 }
 
-.profileCard_image {
-  display: block;
-  width: 300px;
-  height: auto;
-  margin-right: 20px;
-  border-radius: 40px;
+.profileCard_coverImageContainer {
+    display: flex;
+    align-items: center;
+    height: 180px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    overflow: hidden;
+
+     @media (min-width: $profileCard_small_breakpoint) {
+        height: 240px;
+     }
 }
+
+.profileCard_bioInfoContent {
+    margin-top: ($core-margin * 2);
+    padding-left: ($core-margin * 2);
+    padding-right: ($core-margin * 2);
+    padding-bottom: $core-padding;
+
+     @media (min-width: $profileCard_small_breakpoint) {
+        padding-left: ($core-margin * 4);
+     }
+}
+
+.profileCard_coverImage {
+    width: 100%;
+}
+
+.profileCard_bioInfoText {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  margin-bottom: $core-margin; 
+  text-align: center;
+
+  @media (min-width: $profileCard_small_breakpoint) {
+    text-align: left;
+  }
+}
+
+.profileCard_groupBio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $profileCard_small_breakpoint) {
+    justify-content: flex-start;
+  }
+}
+
+.profileCard_workIcon {
+  width: 30px;
+  margin-right: $core-margin;
+}
+
+.profileCard_workplace {
+  font-size: 14px;
+  font-weight: bold;
+  color: $brand-color;
+}
+
+

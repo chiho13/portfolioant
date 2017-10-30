@@ -9,7 +9,7 @@ import {Route, Switch, Link} from 'react-router-dom';
 class App extends Component {
    render() {
     return (
-      <div>
+      <div className="appContainer">
         <Navheader/>
           <Switch>
           <Route exact path="/" component={Home}/>

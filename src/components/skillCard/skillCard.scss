@@ -1,0 +1,23 @@
+//skill card styles
+@import "../../baseStyle/main";
+$skillCard_small_breakpoint: 500px;
+$skillCard_medium_breakpoint: 760px;
+$skillCard_max-width: 1000px;
+
+.skillCard {
+    display: block;
+    padding-top: ($core-padding * 0.5);
+    margin: 0 auto;
+    max-width: $skillCard_max-width;
+
+     @media (min-width: $skillCard_medium_breakpoint) {
+      flex-basis: 40%;
+      padding-left: ($core-padding * 0.5);
+    }
+}
+
+.skillCard_container {
+    position: relative;
+    background-color: $light-color; 
+    padding: $core-padding;
+}

@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
+import './Home.scss';
 import ProfileCard from '../../components/profileCard/profileCard';
-import avatar from '../../assets/avatar.jpg'
+import SkillCard from '../../components/skillCard/skillCard';
+import avatar from '../../assets/avatar.jpg';
+import smallCover from '../../assets/smallcover.jpg';
+import largeCover from '../../assets/largecover.jpg';
 
 export default class Home extends Component {
   render() {
       return (
-        <div>
-          <ProfileCard image={avatar} title="Anthony Ho" details="Anthony is a self taught front end developer. He currently works at The Hut Group"/>
+        <div className="homeContainer">
+          <ProfileCard avatarImage={avatar} smallCoverImage={smallCover}  largeCoverImage={largeCover} />
+          <SkillCard />
         </div>
       );
     }

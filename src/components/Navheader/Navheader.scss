@@ -1,27 +1,110 @@
 @import "../../baseStyle/main";
 
-.header li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
+$navHeader_small_breakpoint: 500px;
+$navHeader_medium_breakpoint: 760px;
+
+.navHeader {
+    display: block;
+    background-color: $light-color;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
 }
-.header {
-  background-color: $brand-color;
-  padding: 0;
+
+.navHeader_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: ($core-padding * 3);
+    padding-bottom: ($core-padding * 2);
+
+    @media (min-width: $navHeader_medium_breakpoint) {
+      flex-direction: row;
+      padding-top: ($core-padding * 4);
+       padding-bottom: ($core-padding * 3);
+    }
 }
-.header li a {
-  color: #FFF;
+
+.navHeader_logo {
+    width: 100px;
+    height: auto;
+
+    @media (min-width: $navHeader_small_breakpoint) {
+        margin-left: $core-margin;
+        width: 150px;
+    }
+
+    @media (min-width: $navHeader_medium_breakpoint) {
+      width: 120px;
+      margin-left: ($core-margin * 4);
+    }
+}
+
+.navHeader_developerWrapper {
+  text-align: center;
+  @media (min-width: $navHeader_medium_breakpoint) {
+  flex-grow: 1;
+   margin-left: ($core-margin * 2);
+   text-align: left;
+}
+}
+
+.navHeader_developer {
+  font-size: 30px;
+  line-height: 1.2;
   font-weight: bold;
-  text-decoration: none;
-  padding: 20px;
-  display: inline-block;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-top: ($core-margin * 2);
 
-  &:hover{
-    background-color: lighten($brand-color, 10%);
-    transition: background-color 0.2s;
+  @media (min-width: $navHeader_small_breakpoint) {
+    font-size: 35px;
   }
+
+   @media (min-width: $navHeader_medium_breakpoint) {
+    margin-top: 0;
+   }
 }
 
-.active {
-  background-color: lighten($brand-color, 10%);
+.navHeader_developerTitle {
+  font-family: 'Cormorant', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  margin-top: ($core-margin * 0.5);
+}
+
+.navHeader_groupList {
+    display: flex;
+    margin-top: ($core-margin * 2);
+
+    @media (min-width: $navHeader_small_breakpoint) {
+        margin-right: ($core-margin * 2);
+    }
+}
+
+.navHeader_groupList li a {
+    color: $dark-color;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        background-color: lighten($brand-color, 10%);
+        color: $light-color;
+        transition: background-color 0.2s;
+    }
+}
+
+.navHeader_listItem {
+    list-style-type: none;
+    margin-right: ($core-margin * 2);
+}
+
+.navHeader_groupList li a.active {
+    background-color: $light-color;
+    color: $brand-color;
+    border-bottom: 2px solid;
+    padding-bottom: ($core-padding * 0.5);
 }

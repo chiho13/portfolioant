@@ -1,0 +1,13 @@
+$home_medium_breakpoint: 760px;
+$home_max-width: 1200px;
+
+.homeContainer {
+	display: block;
+	margin: 0 auto;
+	max-width: $home_max-width;
+	margin-bottom: 50px;
+
+	@media (min-width: $home_medium_breakpoint) {
+		display: flex;
+	}
+}
