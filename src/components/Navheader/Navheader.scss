@@ -47,30 +47,6 @@ $navHeader_medium_breakpoint: 760px;
     }
 }
 
-.navHeader_developer {
-    font-size: 30px;
-    line-height: 1.2;
-    font-weight: bold;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    margin-top: ($core-margin * 2);
-
-    @media (min-width: $navHeader_small_breakpoint) {
-        font-size: 35px;
-    }
-
-    @media (min-width: $navHeader_medium_breakpoint) {
-        margin-top: 0;
-    }
-}
-
-.navHeader_developerTitle {
-    font-family: 'Cormorant', sans-serif;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.4px;
-    margin-top: ($core-margin * 0.5);
-}
 
 .navHeader_groupList {
     display: flex;
@@ -102,7 +78,8 @@ $navHeader_medium_breakpoint: 760px;
 }
 
 .navHeader_groupList li a {
-    font-size: 16px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
     color: #444;
     font-weight: bold;
     letter-spacing: 0.4px;
@@ -119,7 +96,7 @@ $navHeader_medium_breakpoint: 760px;
 
     @media (min-width: $navHeader_medium_breakpoint) {
        padding: ($core-padding * 3);
-       font-size: 21px;
+       font-size: 20px;
     }
 }
 

@@ -36,6 +36,8 @@ export default class ProfileCard extends Component {
                    <p> At work, I specialise in front end engineering - writing HTML5 for SEO optimisation, mobile responsive components using Sass, ES6 javascript for visual interactions, form validation, ajax etc. </p>
 
                     <p>This portfolio is made with React.</p>
+
+                    <a href="mailto:a.chiho13@gmail.com">Email: a.chiho13@gmail.com</a>
                   </div>
                 </div>
             </div>

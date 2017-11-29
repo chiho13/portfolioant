@@ -3,28 +3,102 @@
 $skillCard_small_breakpoint: 500px;
 $skillCard_medium_breakpoint: 760px;
 $skillCard_max-width: 1000px;
+$skillCard_large_breakpoint: $skillCard_max-width;
 
 .skillCard {
     display: block;
     margin: 0 auto;
     max-width: $skillCard_max-width;
 
-     @media (min-width: $skillCard_medium_breakpoint) {
-      flex-basis: 40%;
-      padding-left: $core-padding;
+    @media (min-width: $skillCard_small_breakpoint) {
+        flex-basis: 50%;
+    }
+
+    @media (min-width: $skillCard_medium_breakpoint) {
+        flex-basis: 50%;
+        padding-left: $core-padding;
+    }
+
+    @media (min-width: $skillCard_large_breakpoint) {
+        flex-basis: 40%;
+    }
+}
+
+.skillCard_link {
+    position: relative;
+    cursor: pointer;
+
+    @media (min-width: $skillCard_medium_breakpoint) {
+        &:hover .skillCard_container:before {
+            content: "Works";
+            opacity: 1;
+            background-color: rgba(40, 40, 40, 0.6);
+        }
     }
 }
 
 .skillCard_container {
     position: relative;
-    background-color: $light-color; 
+    background-color: $light-color;
     padding: ($core-padding * 2);
+    border-top: 1px solid $border-color;
 
-    h2, p {
-      margin-top: $core-margin;
+    h2,
+    p {
+        margin-top: $core-margin;
     }
 
-       @media (min-width: $skillCard_medium_breakpoint) {
-        height: calc(100vh - 148px);
+    @media (min-width: $skillCard_medium_breakpoint) {
+        display: flex;
+        align-items: center;
+        border-top: none;
+        height: calc(100% - 40px);
+
+        &:before {
+            content: "";
+            display: block;
+            font-size: 48px;
+            color: $light-color;
+            font-family: 'Montserrat', sans-serif;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            padding: ($core-padding * 2);
+            background-color: transparent;
+            transition: background-color .3s ease-out, opacity .3s ease-out;
+            position: absolute;
+            box-sizing: border-box;
+        }
     }
+}
+
+.skillCard_workTitle {
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    color: $brand-color;
+    border: 2px solid $brand-color;
+    border-radius: 4px;
+    background-color: $light-color;
+    margin-bottom: ($core-margin * 2);
+    padding: ($core-padding * 0.5) $core-padding;
+
+    @media (min-width: $skillCard_medium_breakpoint) {
+        display: none;
+    }
+}
+
+.skillCard_previewMain {
+  text-align: center;
+    .skillCard_previewMainImage {
+        width: 100%;
+        margin-top: $core-margin;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+}
+
+.skillCard_previewMainImage:first-child {
+    padding-bottom: $core-padding;
 }

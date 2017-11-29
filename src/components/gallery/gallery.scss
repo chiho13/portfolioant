@@ -1,0 +1,105 @@
+//skill card styles
+@import "../../baseStyle/main";
+$gallery_small_breakpoint: 600px;
+$gallery_medium_breakpoint: 760px;
+$gallery_max-width: 1000px;
+$gallery_large_breakpoint: $gallery_max-width;
+
+.gallery {
+  display: block;
+  margin: 0 auto;
+}
+
+.gallery_link {
+  position: relative;
+  cursor: pointer;
+
+  @media (min-width: $gallery_medium_breakpoint) {
+    &:hover .gallery_container:before {
+      content: "Works";
+      opacity: 1;
+      background-color: rgba(40, 40, 40, 0.6);
+    }
+  }
+}
+
+.gallery_container {
+  position: relative;
+  background-color: $light-color;
+  padding: ($core-padding * 2);
+  border-top: 1px solid $border-color;
+  margin-bottom: $core-margin * 3;
+
+  h2 {
+    margin-top: ($core-margin * 4);
+    margin-bottom: $core-margin;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+    @media (min-width: $gallery_medium_breakpoint) {
+      font-size: 26px;
+    }
+  }
+}
+
+.gallery_workTitle {
+  font-size: 26px;
+  font-family: 'Montserrat', sans-serif;
+  color: $brand-color;
+  border: 2px solid $brand-color;
+  border-radius: 4px;
+  background-color: $light-color;
+  margin-bottom: ($core-margin * 2);
+  padding: ($core-padding * 0.5) $core-padding;
+
+  @media (min-width: $gallery_medium_breakpoint) {
+    display: none;
+  }
+}
+
+.gallery_previewMain {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  @media (min-width: $gallery_small_breakpoint) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.gallery_previewMainItem {
+  display: block;
+  color: #444;
+  margin-top: ($core-margin * 3);
+  @media (min-width: $gallery_small_breakpoint) {
+    flex-basis: calc(50% - 15px);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+
+    &:hover {
+        background-color: #ddd;
+    }
+  }
+
+  p {
+    margin-top: ($core-margin * 2);
+    line-height: 1.5;
+  }
+}
+
+.gallery_previewMainItem-nohover {
+   &:hover {
+        background-color: #fff;
+    }
+}
+
+.gallery_previewMainImage {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

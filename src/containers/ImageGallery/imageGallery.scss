@@ -1,0 +1,33 @@
+$imageGallery_small_breakpoint: 500px;
+$imageGallery_medium_breakpoint: 760px;
+
+.imageGalleryContainer {
+	display: flex;
+	min-height: 100vh;
+	@media (min-width: $imageGallery_medium_breakpoint) {
+		margin-top: 5px;
+		background-color: #fff;
+	}
+
+}
+
+.react-photo-gallery--gallery {
+	margin: 2px;
+	> div {
+		display: flex;
+		flex-direction: column;
+	@media (min-width: $imageGallery_small_breakpoint) {
+			flex-direction: row;
+	flex-wrap: wrap;
+	}
+
+	img {
+		max-width: 100%;
+			@media (min-width: $imageGallery_small_breakpoint) {
+		align-self: flex-end;
+		flex-grow: 1;
+		width: 49%;
+	}
+	}
+}
+}

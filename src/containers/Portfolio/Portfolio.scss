@@ -1,0 +1,8 @@
+$portfolio_medium_breakpoint: 760px;
+
+.portfolioContainer {
+	@media (min-width: $portfolio_medium_breakpoint) {
+		margin-top: 5px;
+		background-color: #fff;
+	}
+}
