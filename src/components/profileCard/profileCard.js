@@ -30,8 +30,8 @@ export default class ProfileCard extends Component {
                       <div className="profileCard_groupBioWork"><img src={workIcon} className="profileCard_workIcon" /><a href="https://www.thehutgroup.com" className="profileCard_workplace">The Hut Group</a></div>
                     </div>
                   <div className="profileCard_bioInfoText">
-                      <p>Anthony Ho is a Front End Developer with a passion in UI/UX Design and engineering. 
-                    I am self-taught and started my career as a freelancer. Understanding the problem of the business and clients is important to deliver the best solution. This includes increasing conversion and saving time for developers.
+                      <p>I am a self-taught Front End Developer with a passion in UI/UX Design and engineering. 
+                    I started my career as a freelancer. Understanding the problem of the business and clients is important to deliver the best solution. This includes increasing conversion and saving time for developers.
                     </p>
                    <p> At work, I specialise in front end engineering - writing HTML5 for SEO optimisation, mobile responsive components using Sass, ES6 javascript for visual interactions, form validation, ajax etc. </p>
 
