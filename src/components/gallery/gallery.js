@@ -15,31 +15,31 @@ export default class gallery extends Component {
             <div className="gallery_container">
               <h2>Commercial</h2>
               <div className="gallery_previewMain">
-                  <a href="https://www.glossybox.co.uk" className="gallery_previewMainItem">
+                  <a href="https://www.glossybox.co.uk" target="_blank" className="gallery_previewMainItem">
                     <img className="gallery_previewMainImage" src={glossy} />
                     <h3>Glossybox site build</h3>
                     <p>Team Site build for acquisition</p>
                     <p>Reused global widgets for landing page</p>
                   </a>
-                  <a href="https://www.glossybox.co.uk/beauty.profile" className="gallery_previewMainItem">
+                  <a href="https://www.glossybox.co.uk/beauty.profile" target="_blank" className="gallery_previewMainItem">
                     <img className="gallery_previewMainImage" src={beautyprofile} />
                     <h3>Beauty Profile</h3>
                     <p>Transitioned component from adaptive to responsive and refactored javascript from validation</p>
                   </a>
-                  <a href="https://www.illamasqua.com" className="gallery_previewMainItem">
+                  <a href="https://www.illamasqua.com" target="_blank" className="gallery_previewMainItem">
                    <img className="gallery_previewMainImage" src={ugc} />
                    <h3>User Generated Content from Instagram</h3>
                     <p>Feature built for Illamasqua acquisition</p>
                     <p>This has a thumbnail and popup slider for users to see content</p>
                   </a>
-                   <a href="https://www.illamasqua.com/store.locate" className="gallery_previewMainItem">
+                   <a href="https://www.illamasqua.com/store.locate" target="_blank" className="gallery_previewMainItem">
                     <img className="gallery_previewMainImage" src={illammap} />
                     <h3>Store locator Component</h3>
                     <p>Responsive component built for Illamasqua acquisition</p>
                     <p>Users can find store from their current location </p>
                     <p>Users can navigate to location on the search result cards</p>
                   </a>
-                  <a href="https://www.espaskincare.com/store.locate" className="gallery_previewMainItem">
+                  <a href="https://www.espaskincare.com/store.locate" target="_blank" className="gallery_previewMainItem">
                     <img className="gallery_previewMainImage" src={espamap} />
                     <p>Store locator component reused for ESPA skincare acquisition</p>
                   </a>

@@ -60,7 +60,6 @@ $navHeader_medium_breakpoint: 760px;
     @media (min-width: $navHeader_medium_breakpoint) {
         margin-top: 0;
         margin-right: 0;
-        background-color: $light-color;
         position: absolute;
         bottom: 0;
         right: 0;
@@ -80,13 +79,12 @@ $navHeader_medium_breakpoint: 760px;
 .navHeader_groupList li a {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
-    color: #444;
+    color: #fff;
     font-weight: bold;
     letter-spacing: 0.4px;
     display: inline-block;
     padding: ($core-padding) ($core-padding * 2);
     box-sizing: border-box;
-    background-color: $light-color;
     height: 100%;
 
     &:hover {

@@ -1,7 +1,7 @@
 //profile card styles
 @import "../../baseStyle/main";
 $profileCard_small_breakpoint: 500px;
-$profileCard_medium_breakpoint: 760px;
+$profileCard_medium_breakpoint: 800px;
 $profileCard_max-width: 1000px;
 $profileCard_large_breakpoint: $profileCard_max-width;
 
@@ -43,7 +43,6 @@ $profileCard_large_breakpoint: $profileCard_max-width;
     @media (min-width: $profileCard_small_breakpoint) {
         width: 170px;
         height: 170px;
-        margin-left: ($core-margin * 4);
     }
 }
 
@@ -75,13 +74,16 @@ $profileCard_large_breakpoint: $profileCard_max-width;
     padding-left: ($core-margin * 2);
     padding-right: ($core-margin * 2);
     padding-bottom: $core-padding;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
 
     @media (min-width: $profileCard_small_breakpoint) {
         padding-top: $core-padding;
     }
 
     @media (min-width: $profileCard_large_breakpoint) {
-        display: flex;
         padding-left: ($core-margin * 5);
         padding-right: ($core-margin * 5);
     }
@@ -120,7 +122,6 @@ $profileCard_large_breakpoint: $profileCard_max-width;
 
     @media (min-width: $profileCard_large_breakpoint) {
         flex-basis: 70%;
-        margin-left: ($core-margin * 3);
     }
 }
 
@@ -134,22 +135,13 @@ $profileCard_large_breakpoint: $profileCard_max-width;
     }
 
     @media (min-width: $profileCard_large_breakpoint) {
-        flex-basis: 30%;
-        height: 200px;
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
 .profileCard_groupBioName {
     font-family: 'Montserrat', sans-serif;
-    @media (min-width: $profileCard_medium_breakpoint) {
-        position: absolute;
-        top: 0;
-        font-size: 48px;
-        color: $light-color;
-        transform: translateY(-90px);
-        background-color: rgba(80, 10, 11, 0.7);
-        padding: ($core-padding * 0.5) ($core-padding * 1.5)
-    }
 }
 
 .profileCard_groupBioWork {
@@ -158,6 +150,10 @@ $profileCard_large_breakpoint: $profileCard_max-width;
     justify-content: center;
     margin-top: $core-margin;
     margin-bottom: $core-margin;
+
+    @media (min-width: $profileCard_large_breakpoint) {
+        margin-bottom: ($core-margin * 3);
+    }
 }
 
 .profileCard_workIcon {
