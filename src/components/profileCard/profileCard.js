@@ -33,13 +33,16 @@ export default class ProfileCard extends Component {
                       <p>I am a self-taught Front End Developer with a passion in UI/UX Design and engineering. 
                     I started my career as a freelancer. Understanding the problem of the business and clients is important to deliver the best solution. This includes increasing conversion and saving time for developers.
                     </p>
-                   <p> At work, I specialise in front end engineering - writing HTML5 for SEO optimisation, mobile responsive components using Sass, ES6 javascript for visual interactions, form validation, ajax etc. </p>
+                   <p> I work in a agile environement with a team consisting of UX Designers and backend developers to create new features on time.</p>
+                   <p>My skills are: HTML5, Sass, ES6 Javascript, Gulp, Jasmine Unit Testing, JSP, Jenkins</p>
 
                     <p>This portfolio is made with React.</p>
-
-                    <a href="mailto:a.chiho13@gmail.com">Email: a.chiho13@gmail.com</a>
+                    <br/>
+                    <a className="profileCard_contact" href="mailto:a.chiho13@gmail.com">Feel free to email me: a.chiho13@gmail.com</a>
                   </div>
                 </div>
+
+
             </div>
 					</div>
         </div>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './gallery.scss';
+import ExpandableWidget from '../expandableWidget/expandableWidget';
+
 import glossy from '../../assets/glossy.png';
 import beautyprofile from '../../assets/beautyprofile.png';
 import ugc from '../../assets/ugc.png';
@@ -7,64 +9,57 @@ import espamap from '../../assets/espamap.png';
 import illammap from '../../assets/blackandwhite.png';
 import chalkboard from '../../assets/chalkboard.png';
 import pomodoro from '../../assets/pomodoro.png';
+import youtube from '../../assets/youtube.png';
 
 export default class gallery extends Component {
 	render() {
       return (
         <div className="gallery">
             <div className="gallery_container">
-              <h2>Commercial</h2>
+              <h2>Projects</h2>
               <div className="gallery_previewMain">
-                  <a href="https://www.glossybox.co.uk" target="_blank" className="gallery_previewMainItem">
-                    <img className="gallery_previewMainImage" src={glossy} />
-                    <h3>Glossybox site build</h3>
-                    <p>Team Site build for acquisition</p>
-                    <p>Reused global widgets for landing page</p>
-                  </a>
-                  <a href="https://www.glossybox.co.uk/beauty.profile" target="_blank" className="gallery_previewMainItem">
-                    <img className="gallery_previewMainImage" src={beautyprofile} />
-                    <h3>Beauty Profile</h3>
-                    <p>Transitioned component from adaptive to responsive and refactored javascript from validation</p>
-                  </a>
-                  <a href="https://www.illamasqua.com" target="_blank" className="gallery_previewMainItem">
-                   <img className="gallery_previewMainImage" src={ugc} />
-                   <h3>User Generated Content from Instagram</h3>
-                    <p>Feature built for Illamasqua acquisition</p>
-                    <p>This has a thumbnail and popup slider for users to see content</p>
-                  </a>
-                   <a href="https://www.illamasqua.com/store.locate" target="_blank" className="gallery_previewMainItem">
-                    <img className="gallery_previewMainImage" src={illammap} />
-                    <h3>Store locator Component</h3>
-                    <p>Responsive component built for Illamasqua acquisition</p>
-                    <p>Users can find store from their current location </p>
-                    <p>Users can navigate to location on the search result cards</p>
-                  </a>
-                  <a href="https://www.espaskincare.com/store.locate" target="_blank" className="gallery_previewMainItem">
-                    <img className="gallery_previewMainImage" src={espamap} />
-                    <p>Store locator component reused for ESPA skincare acquisition</p>
-                  </a>
-                  <div className="gallery_previewMainItem gallery_previewMainItem-nohover">
-                    <h3>Miscellaneous</h3>
-                      <p>New mobile responsive widgets to replace legacy code</p>
-                      <p>Typography changes</p>
-                      <p>Refactoring code </p>
-                      <p>Brand Configs </p>
-
-                  </div>
+                  <ExpandableWidget imageSrc={glossy} 
+                                    widgetTitle={"Glossybox site build"} 
+                                    externalLink={"https://www.glossybox.co.uk"} 
+                                    widgetDescription="New widgets were created to make site builds like Glossybox faster.?They are also used to replace legacy components on MyProtein, LookFantastic, Zavvi and other sites."/>
+                  
+                  <ExpandableWidget imageSrc={beautyprofile} 
+                                    widgetTitle="Beauty Profile Form"
+                                    externalLink="https://www.glossybox.co.uk/beauty.profile"
+                                    widgetDescription="This component went through a few iterations. I converted the component from adaptive to responsive and refactored the javascript form validation."/>
+               
+                  
+                  <ExpandableWidget imageSrc={ugc} 
+                                    widgetTitle="User Generated Content Social Media"
+                                    externalLink="https://www.illamasqua.com"
+                                    widgetDescription="This component was built for Illamasqua site build. I worked with backend developers to ensure datapoints were requested correctly.?The images are curated from Instagram which show user's makeup art from the products they bought."/>
+               
+                  <ExpandableWidget imageSrc={espamap} 
+                                    widgetTitle="Store locator"
+                                    externalLink="https://www.espaskincare.com/store.locate"
+                                    widgetDescription="A £100m acquisition. This project was challenging, because of the size of feature and tight deadline. I worked closely with UX Designer to ensure user journey flows smoothly with the visual interaction on all device size.?User can able to search for stores from search input or current location as well interacting with markers on the map."/>
+                
               </div>
 
                  <h2>For Fun</h2>
               <div className="gallery_previewMain">
-                  <a href="https://codepen.io/ahomnky/full/wGLxzZ" className="gallery_previewMainItem">
-                    <img className="gallery_previewMainImage" src={chalkboard} />
-                    <h3>Chalkboard</h3>
-                    <p>2014 - first project - made with jQuery</p>
-                  </a>
-                  <a href="https://codepen.io/ahomnky/full/XdLGYR" className="gallery_previewMainItem">
-                   <img className="gallery_previewMainImage" src={pomodoro} />
-                   <h3>Pomodoro Timer</h3>
-                    <p>FreeCodeCamp project </p>
-                  </a>
+                   <ExpandableWidget imageSrc={chalkboard} 
+                                    widgetTitle="Chalkboard"
+                                    externalLink="https://codepen.io/ahomnky/full/wGLxzZ"
+                                    widgetDescription="2014 - Simple drawing app made with HTML5 canvas and jQuery"
+                                    buttonText="Demo"/>
+                
+                  <ExpandableWidget imageSrc={pomodoro} 
+                                    widgetTitle="Pomodoro Timer"
+                                    externalLink="https://codepen.io/ahomnky/full/XdLGYR"
+                                    widgetDescription="A FreeCodeCamp project"
+                                    buttonText="Demo"/>
+
+                  <ExpandableWidget imageSrc={youtube} 
+                                    widgetTitle="Youtube Video Player"
+                                    externalLink="/youtube-search"
+                                    widgetDescription="A simple video search and player via youtube API.?Made with React"
+                                    buttonText="Demo"/>
               </div>
             </div>
         </div>

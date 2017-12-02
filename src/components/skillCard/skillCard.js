@@ -14,7 +14,7 @@ export default class SkillCard extends Component {
           <Link to="/portfolio" className="skillCard_link">
             <div className="skillCard_container">
               <div className="skillCard_previewMain">
-                  <button className="skillCard_workTitle">Works</button>
+                  <button className="skillCard_workTitle">Work</button>
                   <img className="skillCard_previewMainImage" src={glossy} />
                   <img className="skillCard_previewMainImage" src={ugc} />
                   <img className="skillCard_previewMainImage" src={espamap} />

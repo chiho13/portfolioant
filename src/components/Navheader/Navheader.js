@@ -11,7 +11,7 @@ export default class Navheader extends Component {
         <img className="navHeader_logo" src={logoAnt}/>
           <ul className="navHeader_groupList">
             <li className="navHeader_listItem"><NavLink to="/">Home</NavLink></li>
-            <li className="navHeader_listItem"><NavLink to="/portfolio">Works</NavLink></li>
+            <li className="navHeader_listItem"><NavLink to="/portfolio">Work</NavLink></li>
             <li className="navHeader_listItem"><NavLink to="/photography">Photography</NavLink></li>
           </ul>
         </div>

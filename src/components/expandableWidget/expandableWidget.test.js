@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import gallery from './gallery';
+import expandableWidget from './expandableWidget';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<gallery />, div);
+  ReactDOM.render(<expandableWidget />, div);
 });

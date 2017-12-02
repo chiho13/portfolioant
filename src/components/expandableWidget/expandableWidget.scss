@@ -1,0 +1,80 @@
+@import "../../baseStyle/main";
+
+$expandableWidget_small_breakpoint: 600px;
+$expandableWidget_medium_breakpoint: 760px;
+$expandableWidget_max-width: 1000px;
+$expandableWidget_large_breakpoint: $expandableWidget_max-width;
+
+.expandableWidget {
+  position: relative;
+  display: block;
+  color: #444;
+  margin-top: ($core-margin * 3);
+  height: auto;
+  box-sizing: border-box;
+  height: 99%;
+  transition: all 0.2s ease-in-out;
+  @media (min-width: $expandableWidget_small_breakpoint) {
+    flex-basis: calc(50% - 15px);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+
+    &:hover {
+        background-color: #ddd;
+    }
+  }
+
+  p {
+    margin-top: ($core-margin * 2);
+    line-height: 1.5;
+  }
+}
+
+
+
+.expandableWidget_previewMainImage {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expandableWidget_linkButton {
+    background-color: $brand-color;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    color: #fff;
+    line-height: 1.6;
+    display: block;
+    text-decoration: none;
+    transition: background-color .2s;
+    padding: 6px 15px;
+    border-radius: 0;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+
+    &:hover {
+      background-color: lighten($brand-color, 10%);
+    }
+}
+
+.expandableWidget_content {
+  max-height: 0;
+ opacity: 0;
+ transition: all 0.2s ease-in-out;
+
+ .expandableWidget-open & {
+ max-height: 100%;
+    opacity: 1;
+ }
+}
