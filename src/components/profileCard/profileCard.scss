@@ -1,9 +1,8 @@
 //profile card styles
 @import "../../baseStyle/main";
 $profileCard_small_breakpoint: 500px;
-$profileCard_medium_breakpoint: 800px;
+$profileCard_medium_breakpoint: 760px;
 $profileCard_max-width: 1000px;
-$profileCard_large_breakpoint: $profileCard_max-width;
 
 .profileCard {
     position: relative;
@@ -12,20 +11,16 @@ $profileCard_large_breakpoint: $profileCard_max-width;
     max-width: $profileCard_max-width;
 
     @media (min-width: $profileCard_medium_breakpoint) {
-        flex-basis: 50%;
-    }
-
-    @media (min-width: $profileCard_large_breakpoint) {
-        flex-basis: 60%;
+      flex-basis: 60%;
     }
 }
 
 .profileCard_avatarContainer {
     transform: translateY(-75px);
 
-    @media (min-width: $profileCard_small_breakpoint) {
+     @media (min-width: $profileCard_small_breakpoint) {
         transform: translateY(-100px);
-    }
+     }
 }
 
 .profileCard_avatarImage {
@@ -41,8 +36,9 @@ $profileCard_large_breakpoint: $profileCard_max-width;
     background-color: rgba(200, 200, 200, 0.5);
 
     @media (min-width: $profileCard_small_breakpoint) {
-        width: 170px;
-        height: 170px;
+        width: 160px;
+        height:  160px;
+        margin-left: ($core-margin * 4);
     }
 }
 
@@ -65,28 +61,24 @@ $profileCard_large_breakpoint: $profileCard_max-width;
     flex-grow: 0;
     overflow: hidden;
 
-    @media (min-width: $profileCard_small_breakpoint) {
+     @media (min-width: $profileCard_small_breakpoint) {
         height: 240px;
-    }
+     }
 }
 
 .profileCard_bioInfoContent {
     padding-left: ($core-margin * 2);
     padding-right: ($core-margin * 2);
     padding-bottom: $core-padding;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
 
-    @media (min-width: $profileCard_small_breakpoint) {
+     @media (min-width: $profileCard_small_breakpoint) {
         padding-top: $core-padding;
-    }
+     }
 
-    @media (min-width: $profileCard_large_breakpoint) {
-        padding-left: ($core-margin * 5);
-        padding-right: ($core-margin * 5);
-    }
+     @media (min-width: $profileCard_medium_breakpoint) {
+       padding-left: ($core-margin * 4);
+       padding-right: ($core-margin * 4);
+     }
 }
 
 .profileCard_coverImage {
@@ -94,77 +86,72 @@ $profileCard_large_breakpoint: $profileCard_max-width;
 }
 
 .profileCard_bioInfoText {
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.4px;
-    margin-bottom: $core-margin;
-    text-align: center;
-
-    p {
-        margin-top: $core-margin;
-        margin-bottom: $core-margin;
-    }
-
-
-    @media (min-width: $profileCard_small_breakpoint) {
-        text-align: left;
-    }
-
-    @media (min-width: $profileCard_large_breakpoint) {
-        flex-basis: 70%;
-    }
-}
-
-a.profileCard_contact {
   font-size: 18px;
-    color: #444;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  margin-bottom: $core-margin;
+  text-align: center;
 
-    &:hover {
-    color: $brand-color;
-    text-decoration: underline;
-    }
+  p {
+    margin-top: $core-margin;
+  }
 
+
+  @media (min-width: $profileCard_small_breakpoint) {
+    text-align: left;
+  }
 }
 
 .profileCard_groupBio {
-    margin-top: ($core-margin * 2);
-    margin-bottom: ($core-margin * 2);
-    text-align: center;
+  margin-top: ($core-margin * 2);
+  margin-bottom: ($core-margin * 2);
+  text-align: center;
 
-    @media (min-width: $profileCard_small_breakpoint) {
-        justify-content: flex-start;
-    }
-
-    @media (min-width: $profileCard_large_breakpoint) {
-        width: 50%;
-        margin: 0 auto;
-    }
+  @media (min-width: $profileCard_small_breakpoint) {
+    justify-content: flex-start;
+  }
 }
 
 .profileCard_groupBioName {
-    font-family: 'Montserrat', sans-serif;
+  @media (min-width: $profileCard_medium_breakpoint) {
+    position: absolute;
+    top: 0;
+    font-size: 45px;
+    color: $light-color;
+    background: $brand-color;
+    padding: 5px 10px;
+    transform: translateY(-80px);
+  }
 }
 
-.profileCard_groupBioWork {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: $core-margin;
-    margin-bottom: $core-margin;
+.profileCard_pillContainer {
+  display: flex;
+  justify-content: center;
+}
 
-    @media (min-width: $profileCard_large_breakpoint) {
-        margin-bottom: ($core-margin * 3);
-    }
+.profileCard_groupBioPill {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $core-margin;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  border-bottom: 3px solid #dddddd;
+  transition: all 0.2s ease;
+
+  &:hover, &:focus {
+    background-color: #dddddd;
+  }
 }
 
 .profileCard_workIcon {
-    width: 30px;
-    margin-right: $core-margin;
+  width: 30px;
+  margin-right: $core-margin;
 }
 
 .profileCard_workplace {
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: $dark-color;
+  font-size: 18px;
+  font-weight: bold;
+  color: $brand-color;
 }

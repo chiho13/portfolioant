@@ -5,7 +5,7 @@ $navHeader_medium_breakpoint: 760px;
 
 .navHeader {
     display: block;
-    background-color: $brand-color;
+    background-color: #fff;
 }
 
 .navHeader_container {
@@ -79,7 +79,7 @@ $navHeader_medium_breakpoint: 760px;
 .navHeader_groupList li a {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: $brand-color;
     font-weight: bold;
     letter-spacing: 0.4px;
     display: inline-block;
@@ -88,7 +88,7 @@ $navHeader_medium_breakpoint: 760px;
     height: 100%;
 
     &:hover {
-        background-color: lighten($accent-color, 15%);
+        background-color: #f2f2f2;
         transition: background-color 0.2s;
     }
 
@@ -103,6 +103,6 @@ $navHeader_medium_breakpoint: 760px;
 }
 
 .navHeader_groupList li a.active {
-  background-color: $accent-color;
-    color: $light-color;
+  background-color: $brand-color;
+  color: $light-color;
 }

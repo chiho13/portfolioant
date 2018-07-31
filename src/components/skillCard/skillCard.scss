@@ -16,7 +16,7 @@ $skillCard_large_breakpoint: $skillCard_max-width;
 
     @media (min-width: $skillCard_medium_breakpoint) {
         flex-basis: 50%;
-        padding-left: $core-padding;
+        padding-left: 8px;
     }
 
     @media (min-width: $skillCard_large_breakpoint) {

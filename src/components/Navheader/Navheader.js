@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavLink from "../navLink/navLink";
 import './Navheader.scss';
-import logoAnt from "../../assets/whiteLogo.png";
+import logoAnt from "../../assets/blueLogo.png";
 
 export default class Navheader extends Component {
    render() {
@@ -19,5 +19,3 @@ export default class Navheader extends Component {
     )
   }
 }
-
-

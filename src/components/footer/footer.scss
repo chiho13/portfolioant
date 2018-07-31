@@ -8,6 +8,11 @@
   padding: $core-padding;
   background-color: $brand-color;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   color: #fff;
+
+  @media (min-width: 1000px) {
+    position: fixed;
+    max-width: 1420px;
+    margin: 0 auto;
+  }
 }

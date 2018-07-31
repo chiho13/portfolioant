@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Picture } from 'react-responsive-picture';
 import './profileCard.scss';
 import workIcon from '../../assets/work.png';
-
+import emailIcon from '../../assets/email.png';
 
 export default class ProfileCard extends Component {
 	render() {
@@ -27,22 +27,19 @@ export default class ProfileCard extends Component {
                 <div className="profileCard_bioInfoContent">
                   <div className="profileCard_groupBio">
                       <h1 className="profileCard_groupBioName">Anthony Ho</h1>
-                      <div className="profileCard_groupBioWork"><img src={workIcon} className="profileCard_workIcon" /><a href="https://www.thehutgroup.com" className="profileCard_workplace">The Hut Group</a></div>
-                    </div>
+											<div className="profileCard_pillContainer">
+                      	<a href="https://www.thehutgroup.com" target="_blank" className="profileCard_groupBioPill"><img src={workIcon} className="profileCard_workIcon" /><span className="profileCard_workplace">The Hut Group</span></a>
+												<a href="mailto:a.chiho13@gmail.com" target="_blank" className="profileCard_groupBioPill"><img src={emailIcon} className="profileCard_workIcon" /><span className="profileCard_workplace">Contact</span></a>
+											</div>
+										</div>
                   <div className="profileCard_bioInfoText">
-                      <p>I am a self-taught Front End Developer with a passion in UI/UX Design and engineering. 
-                    I started my career as a freelancer. Understanding the problem of the business and clients is important to deliver the best solution. This includes increasing conversion and saving time for developers.
+                      <p>Anthony Ho is a Front End Developer with a passion in UI/UX Design and engineering.
+                    I am self-taught and started my career as a freelancer. Understanding the problem of the business and clients is important to deliver the best solution. This includes increasing conversion and saving time for developers.
                     </p>
-                   <p> I work in a agile environement with a team consisting of UX Designers and backend developers to create new features on time.</p>
-                   <p>My skills are: HTML5, Sass, ES6 Javascript, Gulp, Jasmine Unit Testing, JSP, Jenkins</p>
-
+                   <p> I work closely with UX Designers and backend engineers to deliver new features for the ecommerce platform. The technologies I use are HTML5, Sass and ES6 Javascript</p>
                     <p>This portfolio is made with React.</p>
-                    <br/>
-                    <a className="profileCard_contact" href="mailto:a.chiho13@gmail.com">Feel free to email me: a.chiho13@gmail.com</a>
                   </div>
                 </div>
-
-
             </div>
 					</div>
         </div>
