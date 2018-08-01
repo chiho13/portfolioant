@@ -30,7 +30,7 @@ $skillCard_large_breakpoint: $skillCard_max-width;
 
     @media (min-width: $skillCard_medium_breakpoint) {
         &:hover .skillCard_container:before {
-            content: "Work";
+            content: "Works";
             opacity: 1;
             background-color: rgba(40, 40, 40, 0.6);
         }

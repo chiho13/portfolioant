@@ -26,8 +26,10 @@ export default class expandableWidget extends Component {
 
       return (
         <div className={expandable} >
-               <img className="expandableWidget_previewMainImage" src={this.props.imageSrc} onClick={this.expandWidget} />
-               <h3>{this.props.widgetTitle}</h3>
+              <div className="expandableWidget_click" onClick={this.expandWidget}>
+                <img className="expandableWidget_previewMainImage" src={this.props.imageSrc} />
+                <h3>{this.props.widgetTitle}<div className="expandableWidget_chevron"></div></h3>
+              </div>
 
                <div className="expandableWidget_content">
                {widgetDescription.map((object, i) => {
