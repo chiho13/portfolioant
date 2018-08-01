@@ -17,7 +17,7 @@ export default class gallery extends Component {
       return (
         <div className="gallery">
             <div className="gallery_container">
-              <h2>Commerical Projects</h2>
+              <h2>Commercial Projects</h2>
               <div className="gallery_previewMain">
 									<ExpandableWidget imageSrc={sys}
 														widgetTitle="Select Your Sample"
