@@ -5,6 +5,17 @@ $gallery_medium_breakpoint: 760px;
 $gallery_max-width: 1000px;
 $gallery_large_breakpoint: $gallery_max-width;
 
+
+@keyframes gallery_spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .gallery {
   display: block;
   margin: 0 auto;
@@ -102,4 +113,21 @@ $gallery_large_breakpoint: $gallery_max-width;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+.gallery_loadingSpinner {
+  position: absolute;
+border-right-color: transparent;
+top: 50%;
+right: 0;
+left: 0;
+height: 50px;
+width: 50px;
+animation: gallery_spinner 0.8s infinite linear;
+border-width: 3px;
+border-style: solid;
+border-color: $brand-color;
+border-right-color: transparent;
+border-radius: 50%;
+margin: 0 auto;
 }

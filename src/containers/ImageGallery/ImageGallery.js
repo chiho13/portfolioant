@@ -14,18 +14,6 @@ import holyisland from '../../assets/photography/holyisland.jpg';
 import dusk from '../../assets/photography/dusk.jpg';
 
 // import lightbox from '../../components/lightbox/lightbox';
-
-export default class ImageGallery extends Component {
-
- render() {
-	return (
-		<div className="imageGalleryContainer">
-	    <Gallery photos={PHOTO_SET} />
-	    </div>
-	);
-    }
-}
-
 const PHOTO_SET = [
   {
     src: bee
@@ -61,3 +49,14 @@ const PHOTO_SET = [
     src: phillynight
   }
 ];
+
+export default class ImageGallery extends Component {
+
+ render() {
+	return (
+		<div className="imageGalleryContainer">
+	    <Gallery photos={PHOTO_SET} />
+	    </div>
+	);
+    }
+}
