@@ -6,6 +6,7 @@ const COMM_QUERY = gql`{
     }
     projectTitle
     projectDescription
+    projectLink
   }
 }`;
 
