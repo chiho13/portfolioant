@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ExpandableWidget from '../expandableWidget/expandableWidget';
 import { Query } from 'react-apollo';
 import commquery from '../../queries/commercial';

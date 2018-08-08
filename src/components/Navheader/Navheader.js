@@ -8,7 +8,7 @@ export default class Navheader extends Component {
     return (
       <nav className="navHeader">
         <div className="navHeader_container">
-        <img className="navHeader_logo" src={logoAnt}/>
+        <img className="navHeader_logo" src={logoAnt} alt="logo"/>
           <ul className="navHeader_groupList">
             <li className="navHeader_listItem"><NavLink to="/">Home</NavLink></li>
             <li className="navHeader_listItem"><NavLink to="/portfolio">Works</NavLink></li>

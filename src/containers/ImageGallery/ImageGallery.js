@@ -1,62 +1,26 @@
 import React, { Component } from 'react';
 import './imageGallery.scss';
 import Gallery from 'react-photo-gallery';
-import bee from '../../assets/photography/bee.jpg';
-import beachrocks from '../../assets/photography/beachrocks.jpg';
-import skyline from '../../assets/photography/skylinequeens.jpg';
-import rockies from '../../assets/photography/lakelouiserockies.jpg';
-import kielder from '../../assets/photography/kielder.jpg';
-import sunset from '../../assets/photography/holeintherocksunset.jpg';
-import phillynight from '../../assets/photography/phillyatnight.jpg';
-import localbeach from '../../assets/photography/localbeach.jpg';
-import palmtrees from '../../assets/photography/palmtrees.jpg';
-import holyisland from '../../assets/photography/holyisland.jpg';
-import dusk from '../../assets/photography/dusk.jpg';
+import { Query } from 'react-apollo';
+import myPhotos from '../../queries/photography';
 
-// import lightbox from '../../components/lightbox/lightbox';
-const PHOTO_SET = [
-  {
-    src: bee
-  },
-  {
-    src: beachrocks
-  },
-  {
-    src: skyline
-  },
-  {
-    src: rockies
-  },
-    {
-    src: sunset
-  },
-  {
-    src: kielder
-  },
-  {
-    src: palmtrees
-  },
-  {
-    src: holyisland
-  },
-  {
-    src: dusk
-  },
-   {
-    src: localbeach
-  },
-   {
-    src: phillynight
-  }
-];
+const PhotographySet = () => (
+  <Query query={myPhotos}>
+  { ({ loading, error, data } ) => {
+    if(loading) return <div className="gallery_loadingSpinner"></div>
+    if (error) return <h1>Error fetching photos!</h1>
+    const photoSet =  data.photographies.map(el => ({src: el.myImages.url}))
+    return <Gallery photos={photoSet} />
+  }}
+</Query>
+);
 
 export default class ImageGallery extends Component {
-
  render() {
-	return (
-		<div className="imageGalleryContainer">
-	    <Gallery photos={PHOTO_SET} />
-	    </div>
-	);
-    }
+	  return (
+		    <div className="imageGalleryContainer">
+	         <PhotographySet/>
+	      </div>
+	  );
+  }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Picture } from 'react-responsive-picture';
 import './skillCard.scss';
 import glossy from '../../assets/glossy.png';
 import ugc from '../../assets/ugc.png';
@@ -15,9 +14,9 @@ export default class SkillCard extends Component {
             <div className="skillCard_container">
               <div className="skillCard_previewMain">
                   <button className="skillCard_workTitle">Works</button>
-                  <img className="skillCard_previewMainImage" src={glossy} />
-                  <img className="skillCard_previewMainImage" src={ugc} />
-                  <img className="skillCard_previewMainImage" src={espamap} />
+                  <img className="skillCard_previewMainImage" src={glossy} alt="glossybox"/>
+                  <img className="skillCard_previewMainImage" src={ugc} alt="user generated content"/>
+                  <img className="skillCard_previewMainImage" src={espamap} alt="store locator"/>
               </div>
             </div>
           </Link>
