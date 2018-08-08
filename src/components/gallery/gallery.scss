@@ -40,6 +40,7 @@ $gallery_large_breakpoint: $gallery_max-width;
   padding: ($core-padding * 2);
   border-top: 1px solid $border-color;
   margin-bottom: $core-margin * 3;
+  min-height: 80vh;
 
   h2 {
     margin-top: ($core-margin * 4);
