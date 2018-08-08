@@ -3,6 +3,7 @@ import { Picture } from 'react-responsive-picture';
 import './profileCard.scss';
 import workIcon from '../../assets/work.png';
 import emailIcon from '../../assets/email.png';
+import graphcms from '../../assets/graphcms.svg';
 
 export default class ProfileCard extends Component {
 	render() {
@@ -38,6 +39,12 @@ export default class ProfileCard extends Component {
                     </p>
                    <p> Communication is key to make a project successful. When I work with UX Designers and backend engineers, I make sure to get the full picture of the project so that nothing gets missed out. The technologies I use are HTML5, Sass and ES6 Javascript</p>
                     <p>This portfolio is made with React + GraphQL</p>
+
+										<br/>
+										<br/>
+										<p>Content Management System: </p>
+										<br/>
+										<img className="graphCMS" src={graphcms} alt="powered by GraphCMS" />
                   </div>
                 </div>
             </div>
