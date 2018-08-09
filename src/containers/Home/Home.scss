@@ -2,10 +2,10 @@ $home_medium_breakpoint: 800px;
 
 .homeContainer {
 	display: block;
-
+	margin-top: 3px;
 	@media (min-width: $home_medium_breakpoint) {
 		display: flex;
-		margin-top: 8px;
+		margin-top: 5px;
 		background-color: #ccc;
 	}
 }

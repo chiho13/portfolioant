@@ -4,9 +4,10 @@ $imageGallery_medium_breakpoint: 760px;
 .imageGalleryContainer {
 	display: flex;
 	min-height: 100vh;
+	margin-top: 3px;
+	background-color: #fff;
 	@media (min-width: $imageGallery_medium_breakpoint) {
 		margin-top: 5px;
-		background-color: #fff;
 	}
 
 }
