@@ -29,7 +29,7 @@ export default class ProfileCard extends Component {
                   <div className="profileCard_groupBio">
                       <h1 className="profileCard_groupBioName">Anthony Ho</h1>
 											<div className="profileCard_pillContainer">
-                      	<a href="https://www.thehutgroup.com" target="_blank" rel="noopener noreferrer" className="profileCard_groupBioPill"><img src={workIcon} className="profileCard_workIcon" alt="work"/><span className="profileCard_workplace">The Hut Group</span></a>
+                      	<a href="https://www.thehutgroup.com" target="_blank" rel="noopener noreferrer" className="profileCard_groupBioPill"><img src={workIcon} className="profileCard_workIcon" alt="work"/><span className="profileCard_workplace">THG</span></a>
 												<a href="mailto:a.chiho13@gmail.com" target="_blank" rel="noopener noreferrer" className="profileCard_groupBioPill"><img src={emailIcon} className="profileCard_workIcon" alt="email"/><span className="profileCard_workplace">Contact</span></a>
 											</div>
 										</div>
