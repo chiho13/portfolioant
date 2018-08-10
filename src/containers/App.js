@@ -6,12 +6,12 @@ import Photography from './ImageGallery/ImageGallery';
 import Navheader from '../components/Navheader/Navheader';
 import Footer from '../components/footer/footer';
 import {Route, Switch} from 'react-router-dom';
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 
 class App extends Component {
    render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <div className="appContainer">
           <Navheader/>
             <Switch>
@@ -21,7 +21,7 @@ class App extends Component {
             </Switch>
             <Footer/>
             </div>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }
