@@ -9,7 +9,6 @@ $expandableWidget_large_breakpoint: $expandableWidget_max-width;
   position: relative;
   display: block;
   color: #444;
-  margin-top: ($core-margin * 3);
   height: auto;
   box-sizing: border-box;
   height: 99%;
@@ -25,8 +24,8 @@ $expandableWidget_large_breakpoint: $expandableWidget_max-width;
     border-radius: 5px;
 
     &:hover {
-        background-color: #f1f1f1;
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+      background-color: #f1f1f1;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
     }
   }
 
