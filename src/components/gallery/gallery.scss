@@ -75,9 +75,9 @@ $gallery_large_breakpoint: $gallery_max-width;
   margin: 0 auto;
 
   @media (min-width: $gallery_small_breakpoint) {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px
   }
 }
 
