@@ -16,12 +16,14 @@ $expandableWidget_large_breakpoint: $expandableWidget_max-width;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   padding: 10px;
   border-radius: 4px;
+  margin-top: 20px;
 
   @media (min-width: $expandableWidget_small_breakpoint) {
     flex-basis: calc(50% - 15px);
     padding: 20px;
     box-sizing: border-box;
     border-radius: 5px;
+    margin-top: 0;
 
     &:hover {
       background-color: #f1f1f1;
