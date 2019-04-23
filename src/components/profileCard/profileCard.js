@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Picture } from 'react-responsive-picture';
 import './profileCard.scss';
-import workIcon from '../../assets/work.png';
 import emailIcon from '../../assets/email.png';
 import graphcms from '../../assets/graphcms.svg';
 

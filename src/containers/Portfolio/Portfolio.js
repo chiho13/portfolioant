@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './Portfolio.scss';
-import Gallery from '../../components/gallery/gallery';
+const Gallery = React.lazy(() => import('../../components/gallery/gallery'));
 
 export default class Portfolio extends Component {
   render() {
       return (
         <div className="portfolioContainer">
-          <Gallery/>
+          <React.Suspense fallback={<div>loading...</div>} >
+            <Gallery/>
+          </React.Suspense>
         </div>
       );
     }

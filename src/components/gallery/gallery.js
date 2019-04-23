@@ -6,7 +6,6 @@ import FunProjects from './funProjects';
 export default class gallery extends Component {
 
 	render() {
-		console.log(this.props.data);
       return (
         <div className="gallery">
             <div className="gallery_container">
