@@ -12,7 +12,6 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
     filename: "styles.css",
@@ -235,7 +234,7 @@ module.exports = {
     // Otherwise React will be compiled in the very slow development mode.
     new webpack.DefinePlugin(env.stringified),
     // Minify the code.
-    new UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin(),
     // Note: this won't work without ExtractTextPlugin.extract(..) in `loaders`.
     new ExtractTextPlugin({
       filename: cssFilename,
