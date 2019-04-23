@@ -29,7 +29,6 @@ export default class ProfileCard extends Component {
                   <div className="profileCard_groupBio">
                       <h1 className="profileCard_groupBioName">Anthony Ho</h1>
 											<div className="profileCard_pillContainer">
-                      	<a href="https://www.thehutgroup.com" target="_blank" rel="noopener noreferrer" className="profileCard_groupBioPill"><img src={workIcon} className="profileCard_workIcon" alt="work"/><span className="profileCard_workplace">THG</span></a>
 												<a href="mailto:a.chiho13@gmail.com" target="_blank" rel="noopener noreferrer" className="profileCard_groupBioPill"><img src={emailIcon} className="profileCard_workIcon" alt="email"/><span className="profileCard_workplace">Contact</span></a>
 											</div>
 										</div>
@@ -37,7 +36,7 @@ export default class ProfileCard extends Component {
                       <p>Anthony Ho is a Front End Developer with a passion in UI/UX Design and engineering.
                     I am self-taught and started my career as a freelancer, while travelling in North America in 2015.
                     </p>
-                   <p> Communication is key to make a project successful. When I work with UX Designers and backend engineers, I make sure to get the full picture of the project so that nothing gets missed out. The technologies I use are HTML5, Sass and ES6 Javascript</p>
+                   <p> Communication is key to make a project successful. When I work with UX Designers and backend engineers, I make sure to get the full picture of the project so that nothing gets missed out. The technologies I use are HTML5, Sass and ES7 Javascript</p>
                     <p>This portfolio is made with React + GraphQL</p>
 
 										<br/>

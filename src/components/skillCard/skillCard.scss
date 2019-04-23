@@ -38,9 +38,13 @@ $skillCard_large_breakpoint: $skillCard_max-width;
 }
 
 .skillCard_container {
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: $core-margin;
+    margin-top: $core-margin;
     background-color: $light-color;
     padding: ($core-padding * 2);
+    
     border-top: 1px solid $border-color;
 
     h2,
@@ -50,28 +54,27 @@ $skillCard_large_breakpoint: $skillCard_max-width;
 
     @media (min-width: $skillCard_medium_breakpoint) {
         display: flex;
-        align-items: center;
         border-top: none;
-        height: calc(100% - 40px);
-
-        &:before {
-            content: "";
-            display: block;
-            font-size: 48px;
-            color: $light-color;
-            font-family: 'Montserrat', sans-serif;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            padding: ($core-padding * 2);
-            background-color: transparent;
-            transition: background-color .3s ease-out, opacity .3s ease-out;
-            position: absolute;
-            box-sizing: border-box;
-        }
     }
+}
+
+.skillCard_cvlink {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $core-margin;
+  padding: 10px 20px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: $brand-color;
+  border-radius: 3px;
+  border-bottom: 3px solid darken($brand-color, 10%);
+  transition: all 0.2s ease;
+
+  &:hover, &:focus {
+    background-color: darken($brand-color, 5%);
+  }
 }
 
 .skillCard_workTitle {
