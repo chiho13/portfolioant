@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import {withRouter} from 'react-router-dom';
 
 class NavLink extends React.Component {
+  
     render() {
-        var isActive = this.context.router.route.location.pathname === this.props.to;
+        const {pathname} = this.props.location;
+        var isActive = pathname === this.props.to;
         var className = isActive ? 'active' : '';
 
         return(
@@ -15,8 +18,4 @@ class NavLink extends React.Component {
     }
 }
 
-NavLink.contextTypes = {
-    router: PropTypes.object
-};
-
-export default NavLink;
+export default withRouter(NavLink);
