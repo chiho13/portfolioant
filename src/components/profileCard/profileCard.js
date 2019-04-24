@@ -32,15 +32,13 @@ export default class ProfileCard extends Component {
 											</div>
 										</div>
                   <div className="profileCard_bioInfoText">
-                      <p>Anthony Ho is a Front End Developer with a passion in UI/UX Design and engineering.
-                    I am self-taught and started my career as a freelancer, while travelling in North America in 2015.
+                      <p>I am a self-taught Front End Developer with a passion in UI/UX Design and engineering.
                     </p>
-                   <p> Communication is key to make a project successful. When I work with UX Designers and backend engineers, I make sure to get the full picture of the project so that nothing gets missed out. The technologies I use are HTML5, Sass and ES7 Javascript</p>
-                    <p>This portfolio is made with React + GraphQL</p>
-
+                   <p> I come from a problem solving background with a bachelors of engineering degree in Materials Science. I love to create engaging user experiences and products. The technologies and tools I use are HTML5, Sass, ES7 Javascript and React.</p>
+                    <p>Please feel free to contact me; I am open to new opportunities <span role="img" aria-label="grin">😀</span>.</p>
 										<br/>
 										<br/>
-										<p>Content Management System: </p>
+                    <p>This portfolio is made with React + GraphQL + GraphCMS</p>
 										<br/>
 										<img className="graphCMS" src={graphcms} alt="powered by GraphCMS" />
                   </div>
