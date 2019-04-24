@@ -40,12 +40,16 @@ $skillCard_large_breakpoint: $skillCard_max-width;
 .skillCard_container {
     position: -webkit-sticky;
     position: sticky;
-    top: $core-margin;
-    margin-top: $core-margin;
+ 
     background-color: $light-color;
+    margin-top: 2px;
     padding: ($core-padding * 2);
-    
-    border-top: 1px solid $border-color;
+
+    @media (min-width: $skillCard_medium_breakpoint) {
+        top: $core-margin;
+        margin-top: $core-margin;
+        border-top: 1px solid $border-color;
+    }
 
     h2,
     p {
