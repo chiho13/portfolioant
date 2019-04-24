@@ -12,27 +12,21 @@ $imageGallery_medium_breakpoint: 800px;
 
 }
 
-.react-photo-gallery--gallery {
-    margin: 2px;
-    > div {
-        display: flex;
-        flex-direction: column;
-        @media (min-width: $imageGallery_small_breakpoint) {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        img {
-			max-width: 100%;
-			align-self: flex-end;
-            @media (min-width: $imageGallery_small_breakpoint) {
-                flex-grow: 1;
-                width: 49%;
-			}
-			
-			@media (min-width: $imageGallery_medium_breakpoint) {
-				align-self: flex-start;
-			}
-        }
+.gallery_imageContainer {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+ 
+    @media screen and (min-width: $imageGallery_medium_breakpoint) {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 49px;
+    }
+    img {
+        max-width: 100%;
+        align-self: center;
     }
 }
+
