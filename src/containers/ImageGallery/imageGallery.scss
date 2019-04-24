@@ -1,5 +1,5 @@
 $imageGallery_small_breakpoint: 500px;
-$imageGallery_medium_breakpoint: 760px;
+$imageGallery_medium_breakpoint: 800px;
 
 .imageGalleryContainer {
     display: flex;
@@ -28,7 +28,11 @@ $imageGallery_medium_breakpoint: 760px;
             @media (min-width: $imageGallery_small_breakpoint) {
                 flex-grow: 1;
                 width: 49%;
-            }
+			}
+			
+			@media (min-width: $imageGallery_medium_breakpoint) {
+				align-self: flex-start;
+			}
         }
     }
 }
