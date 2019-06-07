@@ -7,6 +7,7 @@ import { HttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloProvider } from 'react-apollo';
 import registerServiceWorker from './registerServiceWorker';
+import ReactGA from 'react-ga';
 
 const GRAPHCMS_API = 'https://api-euwest.graphcms.com/v1/cjkcny8e10kqz01fhwlwy3v6s/master'
 
@@ -21,3 +22,6 @@ ReactDOM.render(
 	</ApolloProvider>
 	,document.getElementById('root'));
 registerServiceWorker();
+
+ReactGA.initialize('UA-141535610-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
