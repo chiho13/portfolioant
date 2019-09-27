@@ -12,7 +12,6 @@ export default class Navheader extends Component {
           <ul className="navHeader_groupList">
             <li className="navHeader_listItem"><NavLink to="/">Home</NavLink></li>
             <li className="navHeader_listItem"><NavLink to="/portfolio">Works</NavLink></li>
-            <li className="navHeader_listItem"><NavLink to="/photography">Photography</NavLink></li>
           </ul>
         </div>
       </nav>
