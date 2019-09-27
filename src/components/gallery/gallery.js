@@ -10,7 +10,6 @@ export default class gallery extends Component {
         <div className="gallery">
             <div className="gallery_container">
 									<CommercialProjects />
-                  <FunProjects />
             </div>
         </div>
       );
