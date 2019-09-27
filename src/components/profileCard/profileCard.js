@@ -34,7 +34,8 @@ export default class ProfileCard extends Component {
                   <div className="profileCard_bioInfoText">
                       <p>I am a self-taught Front End Developer with a passion in UI/UX Design and engineering.
                     </p>
-                   <p> I come from a problem solving background with a bachelors of engineering degree in Materials Science. I love to create engaging user experiences and products. The technologies and tools I use are HTML5, Sass, ES7 Javascript and React.</p>
+                   <p> I reallt enjoy creating engaging user experiences and products.  The technologies and tools I use are HTML5, Sass, ES7 Javascript, React, Vue 
+                     and GraphQL.</p>
                     <p>Please feel free to contact me; I am open to new opportunities <span role="img" aria-label="grin">😀</span>.</p>
 										<br/>
 										<br/>

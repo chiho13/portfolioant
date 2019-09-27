@@ -10,7 +10,7 @@ const FunProjects = () => (
   if (error) return <h1>Error fetching project!</h1>
 	return (
     <div>
-    <h2>Demo Projects</h2>
+    <h2>Side Projects</h2>
 		<div className="gallery_previewMain">
         {data.portfolioProjects.map((projects, index) => (
 						<ExpandableWidget key={index} imageSrc={projects.portfolioimage.url}
