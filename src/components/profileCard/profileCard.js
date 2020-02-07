@@ -34,7 +34,7 @@ export default class ProfileCard extends Component {
                   <div className="profileCard_bioInfoText">
                       <p>I am a self-taught Front End Developer and App developer with a passion in making great products.
                     </p>
-                   <p> I enjoy creating engaging user experiences and products.  The technologies and tools I use are HTML5, Sass, ES7 Javascript, React, Vue 
+                   <p>The technologies and tools I use are HTML5, Sass, ES7 Javascript, React, Vue 
                      and GraphQL.</p>
                      <p> I mainly work with Flutter for app development</p>
                     <p>Please feel free to contact me</p>
