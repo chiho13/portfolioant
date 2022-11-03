@@ -60,7 +60,7 @@
     "react-dev-utils": "^9.0.0",
     "react-dom": "^16.8.6",
     "react-ga": "^2.5.7",
-    "react-image-responsive": "^1.0.18",
+    "react-image-responsive": "^2.0.2",
     "react-images": "^0.5.11",
     "react-photo-gallery": "^6.0.17",
     "react-responsive-picture": "^2.0.0",
